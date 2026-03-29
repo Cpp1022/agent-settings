@@ -70,3 +70,4 @@ prefix_rule(pattern=["C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell
 prefix_rule(pattern=["C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "-Command", "git push -u origin codex/rules-structure-cleanup"], decision="allow")
 prefix_rule(pattern=["C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "-Command", "git commit -m \"chore: update runtime command prefix rules\""], decision="allow")
 prefix_rule(pattern=["C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "-Command", "git add rules/runtime/default.rules"], decision="allow")
+prefix_rule(pattern=["C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "-Command", "git add rules/runtime/default.rules; git commit -m \"chore: update runtime command prefix rules\""], decision="allow")
