@@ -12,7 +12,7 @@ Only store durable and reusable info:
 
 - Verbose chat transcript
 - Temporary guesses without decision
-- Duplicate information already in specs/plans
+- Duplicate information already in rules/plans
 
 ## Write Format
 

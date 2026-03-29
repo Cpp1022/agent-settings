@@ -56,8 +56,13 @@
 
 ## 7) Shell Approval Rule
 
-1. Follow `specs/rules/approval-policy.md` for escalated shell approvals.
+1. Follow `rules/references/approval-policy.md` for escalated shell approvals.
 
 ## 8) Worktree Location Rule
 
-1. Use external worktree location policy in `specs/rules/references/worktree-location.md`.
+1. Use external worktree location policy in `rules/references/worktree-location.md`.
+
+## 9) Summary Capture Rule
+
+1. Follow `rules/references/summary-capture.md` for Knowledge/Skill draft capture and review gating.
+

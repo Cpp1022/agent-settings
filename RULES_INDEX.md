@@ -2,19 +2,19 @@
 
 ## Layer 0: Entry
 
-- `specs/AGENT.md`
+- `AGENTS.md`
 
 ## Layer 1: Core Rules (short, high priority)
 
-1. `specs/rules/core.md`
-2. `specs/rules/file-hygiene.md`
-3. `specs/rules/memory.md`
-4. `specs/rules/approval-policy.md`
+1. `rules/file-hygiene.md`
 
 ## Layer 2: Referenced Long Rules
 
-- `specs/rules/references/command-allowlist.md`
-- `specs/rules/references/worktree-location.md`
+- `rules/references/approval-policy.md`
+- `rules/references/command-allowlist.md`
+- `rules/references/memory-capture-policy.md`
+- `rules/references/worktree-location.md`
+- `rules/references/summary-capture.md`
 
 ## Rule Length Limit
 
