@@ -4,7 +4,7 @@
 
 - experiments/<idea-id>/ : temporary scripts and outputs for one idea
 - memory/ : durable state and decisions
-- specs/ : stable rules/spec docs
+- rules/ : stable rule docs
 - process/archive/ : deprecated but traceable files
 
 ## Isolation Policy

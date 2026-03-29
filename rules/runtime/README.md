@@ -4,7 +4,7 @@ This repository is the source of truth for runtime command approval rules.
 
 ## Active File
 
-- `specs/rules/runtime/default.rules`
+- `rules/runtime/default.rules`
 
 ## Live Codex Path
 
@@ -29,6 +29,19 @@ cmd /c fsutil hardlink list "$env:USERPROFILE\.codex\rules\default.rules"
 ```
 
 You should see both paths.
+
+## Re-Link (If Drift Happens)
+
+If hashes differ or hardlink list shows only one path, re-link:
+
+```powershell
+$repo = "C:\项目\agent-settings\rules\runtime\default.rules"
+$live = "$env:USERPROFILE\.codex\rules\default.rules"
+if (Test-Path -LiteralPath $live) { Remove-Item -LiteralPath $live -Force }
+New-Item -ItemType HardLink -Path $live -Target $repo | Out-Null
+```
+
+Then verify again with `fsutil hardlink list`.
 
 ## Rollback
 
